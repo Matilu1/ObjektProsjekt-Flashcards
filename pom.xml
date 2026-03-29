@@ -61,15 +61,15 @@
 			<version>0.0.8</version>
 			<configuration>
 				<options></options>
-				<mainClass>exampleproject.ExampleProjectApp</mainClass>
+				<mainClass>flashcards.ProjectApp</mainClass>
 				<!-- for jlink -->
 				<compress>2</compress>
 				<noHeaderFiles>true</noHeaderFiles>
 				<stripDebug>true</stripDebug>
 				<noManPages>true</noManPages>
-				<launcher>exampleproject</launcher>
-				<jlinkImageName>exampleproject</jlinkImageName>
-				<jlinkZipName>exampleproject</jlinkZipName>
+				<launcher>flashcards</launcher>
+				<jlinkImageName>flashcards</jlinkImageName>
+				<jlinkZipName>flashcards</jlinkZipName>
 			</configuration>
 	    </plugin>
 

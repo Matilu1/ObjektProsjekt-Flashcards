@@ -1,0 +1,192 @@
+Hva er et LAN?|Et lokalt nettverk innenfor et begrenset område|8
+Hva er et WAN?|Et nettverk som dekker store geografiske områder|3
+Hva er en intermediary device?|En enhet som videresender trafikk (f.eks. router/switch)|1
+Hva er en end device?|En enhet som sender eller mottar data (PC, telefon)|1
+Hva er en topologi?|Den fysiske eller logiske strukturen til et nettverk|1
+Hva er forskjellen på OSI og TCP/IP?|OSI har 7 lag, TCP/IP har 4 lag|3
+Hvor mange lag har OSI-modellen?|7|1
+Hva er lag 3 i OSI?|Network layer|0
+Hva er encapsulation?|Prosessen der data pakkes inn lag for lag|1
+Hva er en PDU?|Dataenheten på hvert lag (frame, packet, segment)|0
+Hva er bandwidth?|Maks kapasitet på en forbindelse|0
+Hva er throughput?|Faktisk datahastighet|0
+Hva er forskjellen på half og full duplex?|Half sender én vei, full begge veier samtidig|1
+Hva er UTP?|Unshielded Twisted Pair kabel|0
+Hva er binært tall?|Tall representert med base 2 (0 og 1)|1
+Hva er et oktett?|8 bits|1
+Hva er hex?|Tallsystem base 16|1
+Hvor mange bits er en IPv4-adresse?|32|0
+Hva er en MAC-adresse?|En unik fysisk adresse til en nettverksenhet|1
+Hva brukes MAC-adresser til?|Identifisere enheter i LAN|1
+Hva er en frame?|Dataenhet på datalink layer|1
+Hva er FCS?|Feildeteksjon i en frame|0
+Hvordan lærer en switch MAC-adresser?|Ved å lese source MAC i incoming frames|0
+Hva er flooding?|Når switch sender til alle porter unntatt inngangsport|0
+Hva er unicast?|Én til én kommunikasjon|0
+Hva er broadcast?|Én til alle|1
+Hva er collision domain?|Område der kollisjoner kan skje|0
+Hva gjør network layer?|Ruter pakker mellom nettverk|0
+Hva er en router?|En enhet som kobler sammen nettverk|1
+Hva er en IP-adresse?|En logisk adresse for identifisering i nettverk|1
+Hva er ARP?|Oversetter IP-adresse til MAC-adresse|0
+Hva er en ARP request?|En broadcast forespørsel etter MAC-adresse|0
+Hva er en ARP reply?|Svar med MAC-adressen|1
+Hva gjør kommandoen show ip interface brief?|Viser status på interfaces|1
+Hva gjør no shutdown?|Aktiverer et interface|0
+Hva gjør copy running-config startup-config?|Lagrer konfigurasjon|1
+Hva er default gateway?|Routerens IP brukt for å nå andre nettverk|1
+Hva er subnetting?|Å dele opp et nettverk i mindre nettverk|1
+Hva er en subnet mask?|Skiller nettverk og host-del|1
+Hva betyr /24?|24 bits er nettverksdel|1
+Hva er private IP-adresser?|Adresser brukt internt i nettverk|0
+Hva er IPv6?|Ny IP-standard med 128 bits adresser|1
+Hvordan forkortes IPv6?|Ved å fjerne ledende nuller og bruke ::|0
+Hva er en link-local adresse?|IPv6 adresse for lokalt nettverk|0
+Hva er ICMP?|Protokoll for feilmeldinger og diagnostikk|0
+Hva gjør ping?|Tester forbindelse mellom enheter|1
+Hva er forskjellen på TCP og UDP?|TCP er pålitelig, UDP er raskere men upålitelig|0
+Hva er en port?|Identifiserer applikasjoner på en enhet|0
+Hva er TCP 3-way handshake?|Opprettelse av forbindelse (SYN, SYN-ACK, ACK)|0
+Hva er HTTP?|Protokoll for webtrafikk|0
+Hva er DNS?|Oversetter domenenavn til IP-adresser|0
+Hva er DHCP?|Tildeler IP-adresser automatisk|0
+Hva er client-server modell?|Klient ber om tjenester fra server|0
+Hva er CIA triad?|Confidentiality, Integrity, Availability|0
+Hva er malware?|Ondsinnet programvare|0
+Hva er phishing?|Forsøk på å lure brukere til å gi fra seg info|0
+Hva er første steg i feilsøking?|Sjekke fysisk tilkobling|0
+Hva brukes ping til i feilsøking?|Teste nettverkstilkobling|0
+Hva betyr "destination unreachable"?|Ingen rute til mål|0
+Hva betyr "request timed out"?|Ingen svar mottatt|0
+Hva er flyten av data i nettverk?|Host → Switch → Router → Internet|0
+List opp alle lagene i OSI-modellen i riktig rekkefølge|Physical, Data Link, Network, Transport, Session, Presentation, Application|0
+List opp alle lagene i TCP/IP-modellen|Network Access, Internet, Transport, Application|0
+Hvilket OSI-lag håndterer routing?|Network layer|0
+Hvilket OSI-lag bruker MAC-adresser?|Data Link layer|0
+Hvilket lag i TCP/IP tilsvarer OSI lag 3?|Internet layer|0
+Hva er hovedforskjellen mellom OSI og TCP/IP modellene?|OSI er teoretisk med 7 lag, TCP/IP er praktisk med 4 lag|0
+Forklar encapsulation|Data pakkes inn med header/trailer på hvert lag før sending|0
+Hva er decapsulation?|Fjerning av headers lag for lag hos mottaker|0
+Hva er PDU på transportlaget?|Segment (TCP) eller datagram (UDP)|0
+Hva er PDU på network layer?|Packet|0
+Hva er PDU på data link layer?|Frame|0
+Hva skjer hvis en switch ikke finner MAC-adressen i tabellen?|Den flooder til alle porter|0
+Hva er forskjellen på unicast, multicast og broadcast?|Unicast=1-til-1, multicast=1-til-gruppe, broadcast=1-til-alle|0
+Hva er en MAC-tabell?|Tabell som lagrer MAC-adresser og porter|0
+Hvordan bygger en switch MAC-tabellen?|Ved å lese source MAC på innkommende frames|0
+Hva er formålet med ARP?|Finne MAC-adresse basert på IP-adresse|0
+Er ARP request unicast eller broadcast?|Broadcast|0
+Er ARP reply unicast eller broadcast?|Unicast|0
+Hva skjer hvis ARP feiler?|Enheten kan ikke sende data til destinasjonen|0
+Hva er default gateway brukt til?|Å sende trafikk ut av eget nettverk|0
+Hva skjer hvis default gateway er feil?|Ingen tilgang til andre nettverk|0
+Forklar forskjellen på public og private IP-adresser|Private brukes internt, public på internett|0
+Hva er subnetting brukt til?|Å dele nettverk i mindre deler|0
+Hvor mange hosts finnes i et /24 nettverk?|254|0
+Hvor mange bits er til host i /26?|6|0
+Hva er broadcast-adressen?|Siste adresse i subnettet|0
+Hva er network-adressen?|Første adresse i subnettet|0
+Hva er forskjellen på IPv4 og IPv6?|IPv4 er 32-bit, IPv6 er 128-bit|0
+Hva er forkortingsregelen "::" i IPv6?|Erstatter en eller flere grupper med nuller|0
+Hva er en global unicast IPv6-adresse?|Offentlig IPv6-adresse|0
+Hva er en link-local adresse i IPv6?|Adresse brukt lokalt (fe80::)|0
+Hva er ICMP brukt til?|Feilmeldinger og diagnostikk|0
+Hva betyr ICMP echo request?|Ping forespørsel|0
+Hva betyr ICMP echo reply?|Ping svar|0
+Hva er forskjellen på TCP og UDP i forhold til pålitelighet?|TCP er pålitelig, UDP er ikke|0
+Hva er fordel med UDP?|Lav latency og overhead|0
+Hva er TCP 3-way handshake?|SYN, SYN-ACK, ACK|0
+Hva skjer hvis handshake feiler?|Ingen forbindelse etableres|0
+Hva er en port?|Identifikator for applikasjoner|0
+Hvilken port bruker HTTP?|80|0
+Hvilken port bruker HTTPS?|443|0
+Hvilken port bruker DNS?|53|0
+Hva er DNS sin funksjon?|Oversette domenenavn til IP|0
+Hva er DHCP sin funksjon?|Automatisk IP-tildeling|0
+Hva er en DHCP lease?|Tidsbegrenset IP-tildeling|0
+Hva er forskjellen på client-server og P2P?|Client-server er sentralisert, P2P er desentralisert|0
+Hva er confidentiality?|Kun autoriserte får tilgang|0
+Hva er integrity?|Data er ikke endret|0
+Hva er availability?|Systemer er tilgjengelige|0
+Hva er et eksempel på malware?|Virus, trojaner, ransomware|0
+Hva er phishing?|Luring for å få sensitiv info|0
+Hva er første steg hvis ping feiler?|Sjekke fysisk tilkobling|0
+Hva er neste steg etter fysisk sjekk?|Sjekke IP-konfigurasjon|0
+Hva betyr "request timed out" i ping?|Ingen svar mottatt|0
+Hva betyr "destination unreachable"?|Ingen rute til mål|0
+Hva skjer i data link layer før sending?|Frame bygges med MAC-adresser|0
+Hva skjer i network layer før sending?|IP-adresser legges til|0
+Hva er forskjellen på forwarding og filtering?|Forwarding sender videre, filtering stopper trafikk|0
+Hva gjør en router med en pakke?|Leser IP og sender til riktig nettverk|0
+Hva er routing table?|Tabell med ruter til nettverk|0
+Hva er loopback adresse i IPv4?|127.0.0.1|0
+Hva brukes loopback til?|Testing lokalt nettverk|0
+Hva er forskjellen på statisk og dynamisk IP?|Statisk er manuelt satt, dynamisk via DHCP|0
+Hva skjer hvis to enheter har samme IP?|IP-konflikt|0
+Hva er latency?|Forsinkelse i nettverk|0
+Hva er jitter?|Variasjon i latency|0
+Hva er packet loss?|Pakker som ikke når frem|0
+Hva er QoS?|Prioritering av trafikk|0
+Hva er forskjellen på hub og switch?|Hub sender til alle, switch til riktig port|0
+Hva er forskjellen på router og switch?|Router kobler nettverk, switch kobler enheter i LAN|0
+Hva skjer hvis en switch mottar broadcast?|Sender til alle porter|0
+Hva er en broadcast domain?|Alle enheter som mottar broadcast|0
+Hva er en collision domain?|Område der kollisjoner kan skje|0
+Hvilket OSI-lag håndterer kryptering?|Presentation layer|0
+Hvilket OSI-lag etablerer, vedlikeholder og avslutter sesjoner?|Session layer|0
+Hvilket OSI-lag håndterer ende-til-ende kommunikasjon?|Transport layer|0
+Hvilket lag opererer en switch på?|Data Link layer|0
+Hvilket lag opererer en router på?|Network layer|0
+Hvilket lag håndterer bits på kabel?|Physical layer|0
+Hva er rekkefølgen på encapsulation?|Data → Segment → Packet → Frame → Bits|0
+Hva legges til i transportlaget under encapsulation?|TCP/UDP header (porter)|0
+Hva legges til i network layer?|IP header|0
+Hva legges til i data link layer?|MAC header og trailer|0
+Hva skjer under decapsulation?|Headers fjernes lag for lag hos mottaker|0
+Hva er network address i et subnet?|Første adresse i subnettet|0
+Hva er broadcast address?|Siste adresse i subnettet|0
+Hva er gyldig host range?|Alle adresser mellom network og broadcast|0
+Hva er network address for 192.168.1.10/24?|192.168.1.0|0
+Hva er broadcast address for 192.168.1.10/24?|192.168.1.255|0
+Hvor mange hosts i /26?|62|0
+Hva er subnet mask for /26?|255.255.255.192|0
+Hva er increment i /26 subnet?|64|0
+Hva er store-and-forward switching?|Switch sjekker hele frame før sending|0
+Hva er cut-through switching?|Switch videresender før hele frame er mottatt|0
+Hva er switching latency?|Forsinkelse i switch behandling|0
+Hva skjer hvis en host sender til samme subnet?|ARP brukes for å finne MAC til mottaker|0
+Hva skjer hvis en host sender til annet subnet?|Sender til default gateway MAC|0
+Når brukes ARP for gateway?|Når destinasjon er utenfor subnet|0
+Hva er riktig rekkefølge for å konfigurere router interface?|enable → configure terminal → interface → ip address → no shutdown|0
+Hva gjør kommandoen enable?|Går til privileged EXEC mode|0
+Hva gjør configure terminal?|Går til global config mode|0
+Hva gjør interface g0/0?|Velger interface|0
+Hva gjør ip address kommando?|Setter IP på interface|0
+Hva er multicast i IPv6?|En til mange kommunikasjon|0
+Hva er anycast?|En til nærmeste av flere enheter|0
+Hva er EUI-64?|Automatisk generering av IPv6 interface ID|0
+Hva er SYN i TCP?|Starter forbindelse|0
+Hva er ACK?|Bekrefter mottatt data|0
+Hva er FIN?|Avslutter forbindelse|0
+Hva brukes sequence numbers til?|Holde orden på data|0
+Hva brukes acknowledgements til?|Bekrefte mottak|0
+Hvilken protokoll brukes til å oversette navn til IP?|DNS|0
+Hvilken protokoll brukes til webtrafikk?|HTTP|0
+Hvilken protokoll gir IP automatisk?|DHCP|0
+Hvilken protokoll brukes til sikker web?|HTTPS|0
+Hva er forskjellen på plaintext og encrypted passwords?|Encrypted er sikrere|0
+Hva er basic device hardening?|Sikring av enheter med passord og config|0
+Hvorfor disable unused ports?|Redusere angrepsflate|0
+Hva er første steg i structured troubleshooting?|Identifisere problemet|0
+Hva er neste steg?|Teste en teori|0
+Hva gjør traceroute?|Viser ruten pakker tar|0
+Scenario: PC A sender til PC B i samme nettverk, hva skjer først?|ARP request for MAC-adresse|0
+Scenario: PC A sender til ekstern server, hva skjer?|Sender til default gateway|0
+Scenario: Switch mottar ukjent MAC, hva gjør den?|Flooder frame|0
+Scenario: Router mottar pakke, hva sjekker den?|Destinasjons IP|0
+Scenario: Ping feiler, hva sjekker du først?|Fysisk tilkobling|0
+Scenario: To enheter har samme IP, hva skjer?|IP-konflikt|0
+Scenario: Ingen internett men lokal ping funker, hva er feil?|Default gateway|0
+Scenario: DNS feiler, hva opplever bruker?|Kan ikke nå nettsider med navn|0
+Scenario: DHCP feiler, hva skjer?|Ingen IP-adresse|0
+Scenario: TCP handshake stopper etter SYN, hva skjer?|Ingen forbindelse opprettes|0
