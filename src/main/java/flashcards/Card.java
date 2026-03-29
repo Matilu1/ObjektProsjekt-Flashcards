@@ -3,7 +3,6 @@ package flashcards;
 public class Card implements Reviewable {
     private String spørsmål;
     private String svar;
-    private String card;
     private int score;
 
     public Card(String spørsmål, String svar){
@@ -13,7 +12,6 @@ public class Card implements Reviewable {
         this.spørsmål = spørsmål;
         this.svar = svar;
         this.score = 0;
-        this.card = spørsmål;
     }
 
     public String getSpørsmål(){
