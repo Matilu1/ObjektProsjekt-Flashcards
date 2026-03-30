@@ -1,5 +1,5 @@
 package flashcards;
-
+//helt basic app starter, åpner alltid på lag1 først
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

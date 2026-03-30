@@ -14,6 +14,7 @@ import javafx.scene.control.Dialog;
 import javafx.scene.control.ButtonType;
 
 public class DeckController {
+    //private
     private Subject subject;
     private List<Card> deck;
     private int currentIndex;
@@ -24,7 +25,8 @@ public class DeckController {
     @FXML private Button flipButton;
     @FXML private Label scoreLabel;
 
-
+    //public
+    //setter igang bunken, sjekker
     public void setSubject(Subject subject){
         this.subject = subject;
         this.deck = subject.getCardDeck();
@@ -41,7 +43,7 @@ public class DeckController {
         
     }
 
-
+    //lager ett nytt kort, men bruker her en popup boks. krav:både spørsmål og svar skal være fylt
     @FXML
     public void handleNewCard(){
         Dialog <Card> dialog = new Dialog<>();
@@ -56,15 +58,23 @@ public class DeckController {
         dialog.getDialogPane().setContent(innhold);
 
         dialog.getDialogPane().getButtonTypes().addAll(ButtonType.OK, ButtonType.CANCEL);
+        Button okButton = (Button) dialog.getDialogPane().lookupButton(ButtonType.OK);
+        //Man skal ikke kunne trykke ok med mindre man har fylt inn begge felt, feilhåndtering del
+        okButton.setDisable(true);
+        spørsmålFelt.textProperty().addListener((obs, gammel, nytt) -> {
+            okButton.setDisable(nytt.trim().isBlank() || spørsmålFelt.getText().trim().isBlank());
+        });
 
+        svarFelt.textProperty().addListener((obs, gammel, nytt) -> {
+            okButton.setDisable(nytt.trim().isBlank() || svarFelt.getText().trim().isBlank());
+        }
+        );
+        
+        //hvis man først kan trykke på knappen vet jeg at svaret er godkjent
         dialog.setResultConverter(knapp -> {
             if (knapp == ButtonType.OK) {
-                String spørsmål = spørsmålFelt.getText().trim();
-                String svar = svarFelt.getText().trim();
-
-                if (!svar.isBlank() && !spørsmål.isBlank()){
-                    return new Card(spørsmål, svar);
-                }
+                //lager den i konstruktøren til card
+                return new Card(spørsmålFelt.getText().trim(), svarFelt.getText().trim());
             }
             return null;
         })
@@ -83,7 +93,7 @@ public class DeckController {
     });
        
     }
-
+//knappene mine <3
     @FXML   
     public void handleCan(){
         Card currentCard = deck.get(currentIndex);
@@ -118,7 +128,7 @@ public class DeckController {
         cardlabel.setText(deck.get(currentIndex).getSpørsmål());
         updateCardColor();
         }
-
+//bytter tilbake til lag1
     @FXML 
     public void handleBack(){
         try{
@@ -131,7 +141,7 @@ public class DeckController {
             throw new RuntimeException("greide ikke gå tilbake", e);
         }
     }
-
+//endrer fargen på scoringsystemet basert på scoren til kortet
     private void updateCardColor() {
     MasteryLevel level = deck.get(currentIndex).getMasteryLevel();
     switch (level) {

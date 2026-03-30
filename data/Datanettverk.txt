@@ -190,3 +190,4 @@ Scenario: Ingen internett men lokal ping funker, hva er feil?|Default gateway|0
 Scenario: DNS feiler, hva opplever bruker?|Kan ikke nå nettsider med navn|0
 Scenario: DHCP feiler, hva skjer?|Ingen IP-adresse|0
 Scenario: TCP handshake stopper etter SYN, hva skjer?|Ingen forbindelse opprettes|0
+heiu|hadei|0

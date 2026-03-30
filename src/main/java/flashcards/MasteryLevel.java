@@ -1,5 +1,5 @@
 package flashcards;
-
+//usikker på hvor viktig denne endte opp med å være, men bruker den på en eller annen måte og tør ikke slette den nå
 public enum MasteryLevel {
     RED("Kan ikke"),
     YELLOW("Kan delvis"),

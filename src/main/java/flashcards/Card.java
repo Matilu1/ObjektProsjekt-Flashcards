@@ -1,19 +1,21 @@
 package flashcards;
-
+//Logikk klasse
 public class Card implements Reviewable {
     private String spørsmål;
     private String svar;
     private int score;
-
+    //kontrollør
     public Card(String spørsmål, String svar){
         if (spørsmål == null || spørsmål.isBlank() || svar == null || svar.isBlank()){
             throw new IllegalArgumentException("Du må fylle inn både spørsmål og svar");
         }
-        this.spørsmål = spørsmål;
-        this.svar = svar;
-        this.score = 0;
+        if (spørsmål.contains("|") || svar.contains("|")){
+            throw new IllegalArgumentException("| er eneste ugyldige tegn pga software"); //dette burde løses på en bedre måte
     }
-
+    this.spørsmål = spørsmål;
+    this.svar = svar;
+    this.score = 0;
+    }
     public String getSpørsmål(){
         return spørsmål;
     }
