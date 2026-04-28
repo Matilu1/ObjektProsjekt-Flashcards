@@ -1,25 +1,25 @@
-Hva er et LAN?|Et lokalt nettverk innenfor et begrenset område|8
+Hva er et LAN?|Et lokalt nettverk innenfor et begrenset område|12
 Hva er et WAN?|Et nettverk som dekker store geografiske områder|3
-Hva er en intermediary device?|En enhet som videresender trafikk (f.eks. router/switch)|1
-Hva er en end device?|En enhet som sender eller mottar data (PC, telefon)|1
-Hva er en topologi?|Den fysiske eller logiske strukturen til et nettverk|1
-Hva er forskjellen på OSI og TCP/IP?|OSI har 7 lag, TCP/IP har 4 lag|3
-Hvor mange lag har OSI-modellen?|7|1
-Hva er lag 3 i OSI?|Network layer|0
-Hva er encapsulation?|Prosessen der data pakkes inn lag for lag|1
-Hva er en PDU?|Dataenheten på hvert lag (frame, packet, segment)|0
-Hva er bandwidth?|Maks kapasitet på en forbindelse|0
-Hva er throughput?|Faktisk datahastighet|0
-Hva er forskjellen på half og full duplex?|Half sender én vei, full begge veier samtidig|1
-Hva er UTP?|Unshielded Twisted Pair kabel|0
-Hva er binært tall?|Tall representert med base 2 (0 og 1)|1
-Hva er et oktett?|8 bits|1
-Hva er hex?|Tallsystem base 16|1
-Hvor mange bits er en IPv4-adresse?|32|0
-Hva er en MAC-adresse?|En unik fysisk adresse til en nettverksenhet|1
-Hva brukes MAC-adresser til?|Identifisere enheter i LAN|1
-Hva er en frame?|Dataenhet på datalink layer|1
-Hva er FCS?|Feildeteksjon i en frame|0
+Hva er en intermediary device?|En enhet som videresender trafikk (f.eks. router/switch)|4
+Hva er en end device?|En enhet som sender eller mottar data (PC, telefon)|4
+Hva er en topologi?|Den fysiske eller logiske strukturen til et nettverk|4
+Hva er forskjellen på OSI og TCP/IP?|OSI har 7 lag, TCP/IP har 4 lag|5
+Hvor mange lag har OSI-modellen?|7|3
+Hva er lag 3 i OSI?|Network layer|2
+Hva er encapsulation?|Prosessen der data pakkes inn lag for lag|3
+Hva er en PDU?|Dataenheten på hvert lag (frame, packet, segment)|2
+Hva er bandwidth?|Maks kapasitet på en forbindelse|1
+Hva er throughput?|Faktisk datahastighet|1
+Hva er forskjellen på half og full duplex?|Half sender én vei, full begge veier samtidig|2
+Hva er UTP?|Unshielded Twisted Pair kabel|1
+Hva er binært tall?|Tall representert med base 2 (0 og 1)|2
+Hva er et oktett?|8 bits|2
+Hva er hex?|Tallsystem base 16|2
+Hvor mange bits er en IPv4-adresse?|32|1
+Hva er en MAC-adresse?|En unik fysisk adresse til en nettverksenhet|2
+Hva brukes MAC-adresser til?|Identifisere enheter i LAN|2
+Hva er en frame?|Dataenhet på datalink layer|2
+Hva er FCS?|Feildeteksjon i en frame|1
 Hvordan lærer en switch MAC-adresser?|Ved å lese source MAC i incoming frames|0
 Hva er flooding?|Når switch sender til alle porter unntatt inngangsport|0
 Hva er unicast?|Én til én kommunikasjon|0
@@ -191,3 +191,4 @@ Scenario: DNS feiler, hva opplever bruker?|Kan ikke nå nettsider med navn|0
 Scenario: DHCP feiler, hva skjer?|Ingen IP-adresse|0
 Scenario: TCP handshake stopper etter SYN, hva skjer?|Ingen forbindelse opprettes|0
 heiu|hadei|0
+h|h|0
